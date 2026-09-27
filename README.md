@@ -1,6 +1,6 @@
-# Pace Zone Monitor — pages
+# PaceZone — pages
 
-Support and privacy pages for the **Pace Zone Monitor** iOS app,
+Support and privacy pages for the **PaceZone** iOS app,
 served via GitHub Pages.
 
 | Page | URL |
@@ -19,7 +19,6 @@ processing so the files are served exactly as committed.
 
 ## Keeping it accurate
 
-The privacy policy states that the app collects nothing, transmits nothing,
-and uses location only on-device. If the app's behaviour ever changes —
-analytics, crash reporting, accounts, or anything that sends data off the
-device — `privacy.html` must be updated **before** that version ships.
+The privacy policy states that the developer does not collect trip or location
+data. It also explains that Apple provides map and purchase services. Keep
+`privacy.html` aligned with the released app.
