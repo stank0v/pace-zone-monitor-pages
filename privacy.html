@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PaceZone Privacy Policy</title>
-<meta name="description" content="Privacy Policy for the PaceZone iOS app. No accounts, analytics or trackers; trips and settings stay on your device.">
+<meta name="description" content="Privacy Policy for the PaceZone app. Trips stay on your device; optional road alerts use an anonymous push token.">
 <link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -17,15 +17,24 @@
 
   <article>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 27 September 2026</p>
+    <p class="updated">Last updated: 3 October 2026</p>
 
     <div class="callout">
       <strong>The short version</strong>
-      PaceZone does not collect personal data for the developer. Trips and settings stay on your device. Apple Maps and the App Store provide map and purchase services under Apple's own privacy terms. There are no accounts, developer servers, analytics, or advertising trackers.
+      PaceZone has no accounts, analytics, advertising or cross-app tracking. Trips, speed measurements and location history stay on your device. If you choose Pro road alerts, our server receives an anonymous push token and your alert choices (the roads you watch, or all roads, the kinds of events and quiet hours) so it can send those alerts. Warnings about events on the road ahead are worked out on your device.
     </div>
 
-    <h2>Information we collect</h2>
-    <p>None for the developer. PaceZone does not create user accounts or send trips, speed measurements, or location history to us. We operate no servers that receive this data from the app.</p>
+    <h2>Road conditions and optional alerts</h2>
+    <p>The Road conditions screen downloads public traffic events, derived from the Bulgarian Road Infrastructure Agency and from TomTom traffic data, from the PaceZone server. The PaceZone server fetches TomTom data itself; your device never contacts TomTom. The request does not include your trip, speed or precise location.</p>
+    <p>If you are a Pro user and turn on road alerts, PaceZone sends the following to our server:</p>
+    <ul>
+      <li>a random installation identifier and an Apple Push Notification service token;</li>
+      <li>the roads you watch (or "all roads in Bulgaria"), and any direction or kilometre range you selected;</li>
+      <li>an optional label you entered for a watched road;</li>
+      <li>the kinds of events you want to hear about and your quiet hours.</li>
+    </ul>
+    <p><strong>Warnings for the road ahead</strong> (Pro) compare the events on your device with your current position and direction of travel. That comparison happens on the iPhone; your location is not sent to our server.</p>
+    <p>This information is used only to match new road events and deliver the alerts you requested. It is not linked to an account, used for advertising, sold, or shared with data brokers.</p>
 
     <h2>Location data</h2>
     <p>The app requests access to your device's location in order to work. Location is processed on your device to determine your current speed and position relative to monitored zones.</p>
@@ -43,10 +52,11 @@
     <p>The app contains no analytics frameworks, no crash-reporting services, no advertising identifiers, and no third-party software development kits that collect information about you. We do not track you across apps or websites.</p>
 
     <h2>Data storage and retention</h2>
-    <p>Any settings or data the app keeps are stored locally on your device, inside the app's own storage area. Because we never receive this data, we cannot access it, retain it, or delete it on your behalf. Deleting the app from your device removes everything it stored.</p>
+    <p>Trips, speed measurements, location history and app settings are stored locally on your device. Removing the app deletes that local data.</p>
+    <p>Road-alert registration is removed from our server when you remove your last watched road or no longer have Pro. Inactive registrations are deleted after 90 days. Apple also tells the server when a push token is no longer valid, after which that registration is removed.</p>
 
     <h2>Children's privacy</h2>
-    <p>The app does not collect personal information from anyone, including children under 13.</p>
+    <p>PaceZone is a driving utility and is not directed to children. It does not knowingly collect personal information from children under 13.</p>
 
     <h2>Changes to this policy</h2>
     <p>If the app's behaviour ever changes in a way that affects your privacy, this page will be updated before that change is released, and the date at the top will be revised.</p>
