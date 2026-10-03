@@ -1,6 +1,6 @@
-# PaceZone — pages
+# Road Monitor — pages
 
-Support and privacy pages for the **PaceZone** iOS app,
+Support and privacy pages for the **Road Monitor** iOS app,
 served via GitHub Pages.
 
 | Page | URL |
