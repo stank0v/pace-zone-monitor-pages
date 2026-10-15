@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Средна скорост I-3 – 4 отсечки, лимити и карта</title>
+<meta name="description" content="Отсечките с контрол на средна скорост по I-3: километри, дължина, лимит 90 km/h и най-малкото време за всеки участък. Карта и списък.">
+<link rel="canonical" href="https://stank0v.github.io/pace-zone-monitor-pages/sredna-skorost/i-3/">
+<meta name="apple-itunes-app" content="app-id=6757105435">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Средна скорост I-3 – 4 отсечки, лимити и карта">
+<meta property="og:description" content="Отсечките с контрол на средна скорост по I-3: километри, дължина, лимит 90 km/h и най-малкото време за всеки участък. Карта и списък.">
+<meta property="og:url" content="https://stank0v.github.io/pace-zone-monitor-pages/sredna-skorost/i-3/">
+<meta property="og:image" content="https://stank0v.github.io/pace-zone-monitor-pages/icon.png">
+<meta property="og:locale" content="bg_BG">
+<meta name="theme-color" content="#1B2430">
+<link rel="icon" href="../../favicon.png">
+<link rel="preload" href="../../fonts/Onest-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../site.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Колко отсечки за средна скорост има по I-3?", "acceptedAnswer": {"@type": "Answer", "text": "В каталога на Road Monitor има 4 отсечки по I-3 (броят е по посоки), общо около 84,8 км."}}, {"@type": "Question", "name": "Какъв е лимитът в отсечките по I-3?", "acceptedAnswer": {"@type": "Answer", "text": "Средната скорост се сравнява с 90 km/h. Лимитът на всяка отсечка е в таблицата по-горе."}}, {"@type": "Question", "name": "Коя е най-дългата отсечка по I-3?", "acceptedAnswer": {"@type": "Answer", "text": "Пейчиново → Горна Студена, около 21,5 км. При 90 km/h се минава за не по-малко от 14 мин 21 с."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Начало", "item": "https://stank0v.github.io/pace-zone-monitor-pages/"}, {"@type": "ListItem", "position": 2, "name": "Средна скорост", "item": "https://stank0v.github.io/pace-zone-monitor-pages/sredna-skorost/"}, {"@type": "ListItem", "position": 3, "name": "I-3", "item": "https://stank0v.github.io/pace-zone-monitor-pages/sredna-skorost/i-3/"}]}</script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script defer src="../../map.js?v=2"></script>
+<script type="application/json" id="map-data">{"zones":[{"n":"Пейчиново → Горна Студена","l":90,"u":"peychinovo-gorna-studena/","p":[[43.44235,25.61077],[43.44103,25.60815],[43.43352,25.58957],[43.43317,25.58843],[43.43227,25.58408],[43.42912,25.56787],[43.429,25.56607],[43.42906,25.56533],[43.43039,25.55508],[43.43047,25.55384],[43.42991,25.53887],[43.43052,25.52209],[43.4299,25.51726],[43.43077,25.50982],[43.43058,25.50621],[43.43036,25.50448],[43.42938,25.50112],[43.42922,25.49969],[43.42906,25.49239],[43.42876,25.49063],[43.42812,25.48892],[43.4229,25.47755],[43.42226,25.47525],[43.41677,25.42688],[43.41403,25.41453],[43.41275,25.40544],[43.41033,25.39236],[43.4103,25.39098],[43.41041,25.38991],[43.41321,25.37437],[43.41382,25.37244],[43.4155,25.36917],[43.41604,25.36737],[43.41622,25.36555],[43.41637,25.3547]]},{"n":"Горна Студена → Пейчиново","l":90,"u":"gorna-studena-peychinovo/","p":[[43.41637,25.3547],[43.41622,25.36555],[43.41604,25.36737],[43.4155,25.36917],[43.41382,25.37244],[43.41321,25.37437],[43.41041,25.38991],[43.4103,25.39098],[43.41033,25.39236],[43.41275,25.40544],[43.41403,25.41453],[43.41677,25.42688],[43.42226,25.47525],[43.4229,25.47755],[43.42812,25.48892],[43.42876,25.49063],[43.42906,25.49239],[43.42922,25.49969],[43.42938,25.50112],[43.43036,25.50448],[43.43058,25.50621],[43.43077,25.50982],[43.4299,25.51726],[43.43052,25.52209],[43.42991,25.53887],[43.43047,25.55384],[43.43039,25.55508],[43.42906,25.56533],[43.429,25.56607],[43.42912,25.56787],[43.43227,25.58408],[43.43317,25.58843],[43.43352,25.58957],[43.44103,25.60815],[43.44235,25.61077]]},{"n":"Долни Дъбник → Телиш","l":90,"u":"dolni-dabnik-telish/","p":[[43.41428,24.46326],[43.4142,24.46183],[43.41396,24.46097],[43.41355,24.46022],[43.41292,24.45963],[43.41192,24.45925],[43.40576,24.45766],[43.40224,24.45638],[43.40106,24.45574],[43.40008,24.45494],[43.39942,24.45412],[43.39864,24.45271],[43.39823,24.45149],[43.39709,24.44609],[43.39673,24.4441],[43.39668,24.44257],[43.39677,24.44153],[43.39722,24.43968],[43.39961,24.43229],[43.40001,24.43057],[43.40021,24.42899],[43.40024,24.42721],[43.40011,24.42592],[43.3997,24.42396],[43.39863,24.42107],[43.39086,24.40284],[43.36943,24.35169],[43.36851,24.34969],[43.36765,24.34818],[43.36639,24.34657],[43.36462,24.34497],[43.3631,24.3441],[43.36134,24.34359],[43.35907,24.34339],[43.34638,24.34389],[43.34443,24.34376],[43.34322,24.34342],[43.34193,24.34277],[43.34009,24.34134],[43.33837,24.33915],[43.33734,24.33722],[43.33676,24.33562],[43.33636,24.33406],[43.33609,24.33238],[43.33597,24.32992],[43.33628,24.32658],[43.33955,24.30185],[43.33968,24.29854],[43.33937,24.29552],[43.33895,24.29368],[43.33823,24.29151],[43.33774,24.29044],[43.32785,24.27382]]},{"n":"Телиш → Долни Дъбник","l":90,"u":"telish-dolni-dabnik/","p":[[43.32776,24.27392],[43.32963,24.27673],[43.33774,24.29044],[43.33823,24.29151],[43.33895,24.29368],[43.33937,24.29552],[43.33968,24.29854],[43.33955,24.30185],[43.33628,24.32658],[43.33597,24.32992],[43.33609,24.33238],[43.33636,24.33406],[43.33676,24.33562],[43.33734,24.33722],[43.33837,24.33915],[43.34009,24.34134],[43.34193,24.34277],[43.34322,24.34342],[43.34443,24.34376],[43.34638,24.34389],[43.35907,24.34339],[43.36134,24.34359],[43.3631,24.3441],[43.36462,24.34497],[43.36639,24.34657],[43.36765,24.34818],[43.36851,24.34969],[43.36943,24.35169],[43.39086,24.40284],[43.39863,24.42107],[43.3997,24.42396],[43.40011,24.42592],[43.40024,24.42721],[43.40021,24.42899],[43.40001,24.43057],[43.39961,24.43229],[43.39722,24.43968],[43.39677,24.44153],[43.39668,24.44257],[43.39673,24.4441],[43.39709,24.44609],[43.39823,24.45149],[43.39864,24.45271],[43.39942,24.45412],[43.40008,24.45494],[43.40157,24.45604],[43.40413,24.45715],[43.40979,24.4587],[43.41143,24.45946],[43.41201,24.45996],[43.41276,24.46093],[43.41328,24.46194],[43.41383,24.4635]]}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../../"><img src="../../icon-64.png" alt="" width="32" height="32">Road Monitor</a>
+  <nav><a href="../../sredna-skorost/">Средна скорост</a><a href="../../vodach/">Наръчник</a><a href="../../support.html" lang="en">Support</a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Навигация"><a href="../../">Начало</a> › <a href="../../sredna-skorost/">Средна скорост</a></nav>
+<section class="band band-neutral">
+  <p class="eyebrow">Път i клас</p>
+  <h1>Средна скорост по I-3: 4 отсечки</h1>
+  <p class="lead">Всички участъци с контрол на средна скорост по I-3: от кой до кой километър са, колко са дълги, какъв е лимитът и за колко време най-рано можеш да ги минеш.</p>
+</section>
+<div id="map" class="map" aria-label="Карта на отсечките по I-3"></div>
+<table class="zones wide"><thead><tr><th>Отсечка</th><th class="num">Дължина</th><th class="num">Лимит</th><th class="num">Най-малко време</th></tr></thead><tbody>
+<tr><td><a href="peychinovo-gorna-studena/">Пейчиново → Горна Студена</a><small>км 3+997 – 25+271</small></td><td class="num">21,5 км</td><td class="num"><span class="sign sign-sm" role="img" aria-label="Ограничение 90 km/h">90</span></td><td class="num">14 мин 21 с</td></tr>
+<tr><td><a href="gorna-studena-peychinovo/">Горна Студена → Пейчиново</a><small>км 25+271 – 3+997</small></td><td class="num">21,5 км</td><td class="num"><span class="sign sign-sm" role="img" aria-label="Ограничение 90 km/h">90</span></td><td class="num">14 мин 21 с</td></tr>
+<tr><td><a href="dolni-dabnik-telish/">Долни Дъбник → Телиш</a><small>км 100+471 – 122+349</small></td><td class="num">20,9 км</td><td class="num"><span class="sign sign-sm" role="img" aria-label="Ограничение 90 km/h">90</span></td><td class="num">13 мин 57 с</td></tr>
+<tr><td><a href="telish-dolni-dabnik/">Телиш → Долни Дъбник</a><small>км 122+349 – 100+471</small></td><td class="num">20,9 км</td><td class="num"><span class="sign sign-sm" role="img" aria-label="Ограничение 90 km/h">90</span></td><td class="num">13 мин 57 с</td></tr>
+</tbody></table>
+<p class="note">„Най-малко време“ е колко трае отсечката, ако караш точно с ограничението през цялото време. Ако я минеш за по-малко, средната ти скорост е над лимита.</p>
+<h2>Въпроси</h2>
+<details><summary>Колко отсечки за средна скорост има по I-3?</summary><p>В каталога на Road Monitor има 4 отсечки по I-3 (броят е по посоки), общо около 84,8 км.</p></details>
+<details><summary>Какъв е лимитът в отсечките по I-3?</summary><p>Средната скорост се сравнява с 90 km/h. Лимитът на всяка отсечка е в таблицата по-горе.</p></details>
+<details><summary>Коя е най-дългата отсечка по I-3?</summary><p>Пейчиново → Горна Студена, около 21,5 км. При 90 km/h се минава за не по-малко от 14 мин 21 с.</p></details>
+<aside class="cta">
+  <p>Road Monitor мери средната ти скорост в зоната и казва дали си под лимита, още докато караш.</p>
+  <a class="button" href="https://apps.apple.com/bg/app/id6757105435">Изтегли от App Store</a>
+</aside>
+<p class="more">Други пътища: <a href="../am-trakiya/">АМ „Тракия“</a> · <a href="../am-struma/">АМ „Струма“</a> · <a href="../am-hemus/">АМ „Хемус“</a> · <a href="../am-maritsa/">АМ „Марица“</a> · <a href="../am-evropa/">АМ „Европа“ (Северна скоростна тангента)</a> · <a href="../i-5/">I-5</a> · <a href="../i-4/">I-4</a> · <a href="../i-1/">I-1</a> · <a href="../i-2/">I-2</a> · <a href="../ii-55/">II-55</a></p>
+
+</main>
+<footer class="site"><div class="wrap">
+  <p><a class="store" href="https://apps.apple.com/bg/app/id6757105435">Изтегли Road Monitor от App Store</a></p>
+  <p>Данните за отсечките са от каталога, който ползва приложението, по списъка на сертифицираните участъци на <a href="https://www.bgtoll.bg" rel="nofollow">BG TOLL</a>. Сайтът е информационен; официален е списъкът на BG TOLL.</p>
+  <p><a href="../../privacy.html" lang="en">Privacy</a> · <a href="../../support.html" lang="en">Support</a> · <a href="../../en/" lang="en" hreflang="en">English</a> · <a href="../../fonts/Onest-OFL.txt">Шрифт Onest (OFL)</a></p>
+</div></footer>
+</body>
+</html>

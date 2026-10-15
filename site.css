@@ -1,0 +1,99 @@
+/* Road Monitor site, "lane" design: ink, one flat ground, colour only for the verdict. */
+@font-face { font-family: Onest; font-weight: 400; font-display: swap; src: url(fonts/Onest-Regular.woff2) format("woff2"); }
+@font-face { font-family: Onest; font-weight: 600; font-display: swap; src: url(fonts/Onest-SemiBold.woff2) format("woff2"); }
+@font-face { font-family: Onest; font-weight: 800; font-display: swap; src: url(fonts/Onest-ExtraBold.woff2) format("woff2"); }
+:root {
+  --ground: #F3F4F1; --surface: #FFFFFF; --ink: #1B2430; --ink-2: #4F5966; --line: #E6E8E3;
+  --under: #137A47; --over: #C42B1C; --neutral: #2E3A48; --road: #9A5512; --ring: #E5332A;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --ground: #0E1216; --surface: #1A2027; --ink: #EEF1F4; --ink-2: #9AA5B1; --line: #2E3640; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 17px/1.6 Onest, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+h1, h2, h3 { line-height: 1.2; letter-spacing: -0.01em; }
+h1 { font-weight: 800; font-size: clamp(30px, 6vw, 46px); margin: 6px 0 12px; }
+h2 { font-weight: 800; font-size: 24px; margin: 36px 0 12px; }
+h2 small { font-weight: 600; font-size: 15px; color: var(--ink-2); margin-left: 6px; }
+
+header.site { padding: 14px 0; border-bottom: 1px solid var(--line); background: var(--surface); }
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 19px; text-decoration: none; }
+.brand img { border-radius: 8px; }
+header.site nav { display: flex; gap: 16px; flex-wrap: wrap; }
+header.site nav a { text-decoration: none; font-weight: 600; color: var(--ink-2); font-size: 15px; }
+header.site nav a:hover { color: var(--ink); }
+
+.crumbs { font-size: 14px; color: var(--ink-2); margin: 16px 0 0; }
+.crumbs a { color: var(--ink-2); }
+
+.band { color: #fff; border-radius: 24px; padding: 32px 28px; margin: 18px 0 24px; }
+.band-under { background: var(--under); }
+.band-neutral { background: var(--neutral); }
+.band-road { background: var(--road); }
+.band .eyebrow { margin: 0; font-weight: 600; font-size: 15px; }
+.band .lead { margin: 0 0 4px; font-size: 19px; max-width: 640px; }
+.band a { color: #fff; }
+.hero { padding: 48px 32px; }
+.zone-head { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+
+.button { display: inline-block; text-decoration: none; padding: 14px 26px; border-radius: 999px; font-weight: 600; background: var(--ink); color: var(--ground); margin-top: 14px; }
+.button-light { background: #fff; color: var(--ink) !important; }
+
+.grid3, .figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 8px 0 12px; }
+.tile { background: var(--surface); border-radius: 18px; padding: 18px 20px; }
+.tile h2 { font-size: 19px; margin: 0 0 6px; }
+.tile p { margin: 0; color: var(--ink-2); }
+.figures .tile span { display: block; color: var(--ink-2); font-size: 14px; font-weight: 600; }
+.figures .tile strong { font-size: 28px; font-weight: 800; font-variant-numeric: tabular-nums; }
+
+.roads { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+.road-card { background: var(--surface); border-radius: 16px; padding: 14px 16px; text-decoration: none; display: flex; flex-direction: column; }
+.road-card span { color: var(--ink-2); font-size: 14px; }
+.road-card:hover { outline: 2px solid var(--ink); }
+
+table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 16px; overflow: hidden; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+th { font-size: 13px; color: var(--ink-2); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+td small { display: block; color: var(--ink-2); font-size: 13px; }
+.num { text-align: right; white-space: nowrap; }
+.times tr.over td { color: var(--over); font-weight: 600; }
+.times tr.under td { color: var(--under); }
+.road-block h2 a { text-decoration: none; }
+.note, .more { color: var(--ink-2); font-size: 15px; }
+
+.sign { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: #fff; color: #111; font-weight: 800; border: solid var(--ring); font-variant-numeric: tabular-nums; flex: none; }
+.sign-sm { width: 34px; height: 34px; border-width: 4px; font-size: 12px; }
+.sign-md { width: 48px; height: 48px; border-width: 6px; font-size: 16px; }
+.sign-lg { width: 96px; height: 96px; border-width: 11px; font-size: 30px; }
+
+.map { height: 380px; border-radius: 18px; margin: 0 0 20px; background: var(--surface); }
+.map-sm { height: 280px; }
+
+details { background: var(--surface); border-radius: 14px; padding: 14px 18px; margin: 8px 0; }
+summary { font-weight: 600; cursor: pointer; }
+details p { margin: 10px 0 0; color: var(--ink-2); }
+
+.cta { background: var(--surface); border-radius: 20px; padding: 22px 24px; margin: 32px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.cta p { margin: 0; max-width: 560px; font-weight: 600; }
+.cta .button { margin: 0; }
+
+.guide p, .guide li { max-width: 680px; }
+.guides { list-style: none; padding: 0; }
+.guides a { display: block; background: var(--surface); border-radius: 16px; padding: 16px 18px; text-decoration: none; }
+.guides span { display: block; color: var(--ink-2); }
+
+footer.site { margin-top: 48px; padding: 24px 0 40px; border-top: 1px solid var(--line); color: var(--ink-2); font-size: 14px; }
+footer.site a.store { font-weight: 600; color: var(--ink); }
+
+@media (max-width: 560px) {
+  .band { padding: 24px 20px; border-radius: 20px; }
+  .hero { padding: 32px 20px; }
+  .zone-head { flex-direction: column-reverse; align-items: flex-start; }
+  th, td { padding: 9px 10px; }
+  table.wide th:nth-child(4), table.wide td:nth-child(4) { display: none; }
+}

@@ -9,7 +9,17 @@ served via GitHub Pages.
 | Support | `https://stank0v.github.io/pace-zone-monitor-pages/support.html` |
 | Privacy Policy | `https://stank0v.github.io/pace-zone-monitor-pages/privacy.html` |
 
-Static HTML, no build step, no dependencies. `.nojekyll` disables Jekyll
+The Bulgarian site (home, `sredna-skorost/` — a page per road and per
+average-speed zone — and the `vodach/` guides) is generated from the app's zone
+catalog; `sitemap.xml` and `robots.txt` too:
+
+    python3 tools/build.py --catalog ~/Development/SpeedCam/SpeedCam
+
+Rebuild after every catalog change. `privacy.html`, `support.html` and the
+English landing page `en/` are hand-written. `site.css` + `fonts/` (Onest,
+OFL) style the generated pages; `style.css` the hand-written ones.
+
+Static HTML, no runtime dependencies (maps load Leaflet + OpenStreetMap tiles). `.nojekyll` disables Jekyll
 processing so the files are served exactly as committed.
 
 ## App Store Connect

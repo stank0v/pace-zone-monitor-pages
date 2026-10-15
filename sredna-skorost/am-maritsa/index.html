@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Средна скорост АМ „Марица“ – 6 отсечки, лимити и карта</title>
+<meta name="description" content="Отсечките с контрол на средна скорост по АМ „Марица“: километри, дължина, лимит 140 km/h и най-малкото време за всеки участък. Карта и списък.">
+<link rel="canonical" href="https://stank0v.github.io/pace-zone-monitor-pages/sredna-skorost/am-maritsa/">
+<meta name="apple-itunes-app" content="app-id=6757105435">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Средна скорост АМ „Марица“ – 6 отсечки, лимити и карта">
+<meta property="og:description" content="Отсечките с контрол на средна скорост по АМ „Марица“: километри, дължина, лимит 140 km/h и най-малкото време за всеки участък. Карта и списък.">
+<meta property="og:url" content="https://stank0v.github.io/pace-zone-monitor-pages/sredna-skorost/am-maritsa/">
+<meta property="og:image" content="https://stank0v.github.io/pace-zone-monitor-pages/icon.png">
+<meta property="og:locale" content="bg_BG">
+<meta name="theme-color" content="#1B2430">
+<link rel="icon" href="../../favicon.png">
+<link rel="preload" href="../../fonts/Onest-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../site.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Колко отсечки за средна скорост има по АМ „Марица“?", "acceptedAnswer": {"@type": "Answer", "text": "В каталога на Road Monitor има 6 отсечки по АМ „Марица“ (броят е по посоки), общо около 69,8 км."}}, {"@type": "Question", "name": "Какъв е лимитът в отсечките по АМ „Марица“?", "acceptedAnswer": {"@type": "Answer", "text": "Средната скорост се сравнява с 140 km/h. Лимитът на всяка отсечка е в таблицата по-горе."}}, {"@type": "Question", "name": "Коя е най-дългата отсечка по АМ „Марица“?", "acceptedAnswer": {"@type": "Answer", "text": "Харманли → Любимец, около 20,7 км. При 140 km/h се минава за не по-малко от 8 мин 52 с."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Начало", "item": "https://stank0v.github.io/pace-zone-monitor-pages/"}, {"@type": "ListItem", "position": 2, "name": "Средна скорост", "item": "https://stank0v.github.io/pace-zone-monitor-pages/sredna-skorost/"}, {"@type": "ListItem", "position": 3, "name": "АМ „Марица“", "item": "https://stank0v.github.io/pace-zone-monitor-pages/sredna-skorost/am-maritsa/"}]}</script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script defer src="../../map.js?v=2"></script>
+<script type="application/json" id="map-data">{"zones":[{"n":"Харманли → Любимец","l":140,"u":"harmanli-lyubimets/","p":[[41.95785,25.88309],[41.95768,25.88677],[41.95705,25.89035],[41.95638,25.89248],[41.95577,25.89395],[41.95432,25.8965],[41.95354,25.89756],[41.95038,25.90104],[41.9486,25.90329],[41.94714,25.90545],[41.94388,25.91108],[41.94143,25.91447],[41.93828,25.91772],[41.93002,25.92481],[41.92843,25.92663],[41.92665,25.92954],[41.9243,25.93525],[41.92329,25.9372],[41.92153,25.93967],[41.91842,25.94308],[41.91695,25.94488],[41.91564,25.94689],[41.91439,25.9493],[41.90971,25.96149],[41.90883,25.96428],[41.90834,25.9669],[41.90742,25.97708],[41.90684,25.97985],[41.90589,25.98291],[41.90436,25.98629],[41.89763,25.99833],[41.89525,26.00281],[41.89354,26.00679],[41.89191,26.01168],[41.89079,26.01636],[41.88992,26.02201],[41.88957,26.02721],[41.88961,26.03811],[41.88919,26.04135],[41.88835,26.04442],[41.88744,26.04659],[41.88636,26.0485],[41.88537,26.04987],[41.8813,26.05457],[41.88012,26.05645],[41.87915,26.0585],[41.87855,26.06016],[41.87804,26.06209],[41.87573,26.07389],[41.87494,26.07627],[41.87392,26.0784],[41.87266,26.08038],[41.87065,26.08263],[41.86913,26.08382],[41.8663,26.08542]]},{"n":"Любимец → Момково","l":140,"u":"lyubimets-momkovo/","p":[[41.86231,26.08764],[41.85748,26.09038],[41.85576,26.09176],[41.85443,26.0932],[41.85266,26.09581],[41.84746,26.10577]]},{"n":"Любимец → Харманли","l":140,"u":"lyubimets-harmanli/","p":[[41.86634,26.08554],[41.86918,26.08394],[41.8707,26.08275],[41.87242,26.08089],[41.87401,26.07849],[41.87502,26.07634],[41.87596,26.07343],[41.87814,26.06213],[41.87922,26.05861],[41.88038,26.05622],[41.88137,26.05467],[41.88501,26.05048],[41.88623,26.04889],[41.88752,26.04667],[41.88843,26.0445],[41.88929,26.04142],[41.88972,26.03812],[41.88966,26.02796],[41.88994,26.02283],[41.89068,26.01745],[41.89174,26.0127],[41.89325,26.00787],[41.89535,26.00287],[41.89717,25.99938],[41.90444,25.98638],[41.90528,25.98469],[41.90617,25.98247],[41.90695,25.97987],[41.90751,25.97714],[41.90845,25.96692],[41.90892,25.96433],[41.90961,25.96207],[41.91448,25.94937],[41.91571,25.94698],[41.91702,25.94498],[41.91847,25.94319],[41.92159,25.93978],[41.9232,25.93758],[41.92439,25.93532],[41.92673,25.92965],[41.9285,25.92673],[41.93043,25.9246],[41.93834,25.91784],[41.94006,25.91618],[41.94149,25.91459],[41.94397,25.91117],[41.94722,25.90554],[41.94868,25.90338],[41.95013,25.90152],[41.95318,25.89818],[41.95439,25.89661],[41.95602,25.89368],[41.95702,25.8909],[41.95772,25.88736],[41.95795,25.88309]]},{"n":"Момково → Любимец","l":140,"u":"momkovo-lyubimets/","p":[[41.84755,26.10585],[41.85275,26.0959],[41.85449,26.09331],[41.85548,26.0922],[41.85713,26.09079],[41.86234,26.08776]]},{"n":"Момково → Свиленград","l":140,"u":"momkovo-svilengrad/","p":[[41.84505,26.1124],[41.84439,26.11632],[41.84368,26.12436],[41.84336,26.12674],[41.8425,26.12978],[41.84122,26.1324],[41.84002,26.13403],[41.83904,26.13506],[41.83159,26.14101],[41.82932,26.1433],[41.82755,26.14571],[41.82369,26.15242],[41.82225,26.1543],[41.82069,26.15597],[41.81935,26.15713],[41.81759,26.15833],[41.8109,26.16174],[41.80771,26.16379],[41.80475,26.1664],[41.80191,26.16974],[41.79978,26.17298],[41.78508,26.19901],[41.78376,26.20236],[41.78203,26.20938],[41.78123,26.21209],[41.78012,26.21483],[41.77858,26.21762]]},{"n":"Свиленград → Момково","l":140,"u":"svilengrad-momkovo/","p":[[41.77867,26.21772],[41.78003,26.2153],[41.78116,26.21263],[41.78218,26.20929],[41.78362,26.20327],[41.78431,26.20116],[41.78515,26.19912],[41.79959,26.17352],[41.80197,26.16985],[41.80479,26.16653],[41.80777,26.16391],[41.81058,26.16207],[41.81763,26.15847],[41.81908,26.15751],[41.82075,26.15608],[41.82232,26.15442],[41.82358,26.15278],[41.82468,26.15105],[41.82762,26.14582],[41.8297,26.14306],[41.83165,26.14112],[41.83908,26.13518],[41.84009,26.13414],[41.8413,26.13248],[41.8421,26.131],[41.84272,26.12951],[41.84346,26.12679],[41.84373,26.12495],[41.84449,26.11635],[41.84515,26.11244]]}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../../"><img src="../../icon-64.png" alt="" width="32" height="32">Road Monitor</a>
+  <nav><a href="../../sredna-skorost/">Средна скорост</a><a href="../../vodach/">Наръчник</a><a href="../../support.html" lang="en">Support</a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Навигация"><a href="../../">Начало</a> › <a href="../../sredna-skorost/">Средна скорост</a></nav>
+<section class="band band-neutral">
+  <p class="eyebrow">Автомагистрала</p>
+  <h1>Средна скорост по АМ „Марица“: 6 отсечки</h1>
+  <p class="lead">Всички участъци с контрол на средна скорост по АМ „Марица“: от кой до кой километър са, колко са дълги, какъв е лимитът и за колко време най-рано можеш да ги минеш.</p>
+</section>
+<div id="map" class="map" aria-label="Карта на отсечките по АМ „Марица“"></div>
+<table class="zones wide"><thead><tr><th>Отсечка</th><th class="num">Дължина</th><th class="num">Лимит</th><th class="num">Най-малко време</th></tr></thead><tbody>
+<tr><td><a href="harmanli-lyubimets/">Харманли → Любимец</a><small>км 62+476 – 83+554</small></td><td class="num">20,7 км</td><td class="num"><span class="sign sign-sm" role="img" aria-label="Ограничение 140 km/h">140</span></td><td class="num">8 мин 52 с</td></tr>
+<tr><td><a href="lyubimets-harmanli/">Любимец → Харманли</a><small>км 83+554 – 62+476</small></td><td class="num">20,7 км</td><td class="num"><span class="sign sign-sm" role="img" aria-label="Ограничение 140 km/h">140</span></td><td class="num">8 мин 52 с</td></tr>
+<tr><td><a href="lyubimets-momkovo/">Любимец → Момково</a><small>км 83+554 – 89+476</small></td><td class="num">2,3 км</td><td class="num"><span class="sign sign-sm" role="img" aria-label="Ограничение 140 km/h">140</span></td><td class="num">59 с</td></tr>
+<tr><td><a href="momkovo-lyubimets/">Момково → Любимец</a><small>км 89+476 – 83+554</small></td><td class="num">2,3 км</td><td class="num"><span class="sign sign-sm" role="img" aria-label="Ограничение 140 km/h">140</span></td><td class="num">59 с</td></tr>
+<tr><td><a href="momkovo-svilengrad/">Момково → Свиленград</a><small>км 89+476 – 98+481</small></td><td class="num">12,0 км</td><td class="num"><span class="sign sign-sm" role="img" aria-label="Ограничение 140 km/h">140</span></td><td class="num">5 мин 08 с</td></tr>
+<tr><td><a href="svilengrad-momkovo/">Свиленград → Момково</a><small>км 98+481 – 89+476</small></td><td class="num">12,0 км</td><td class="num"><span class="sign sign-sm" role="img" aria-label="Ограничение 140 km/h">140</span></td><td class="num">5 мин 08 с</td></tr>
+</tbody></table>
+<p class="note">„Най-малко време“ е колко трае отсечката, ако караш точно с ограничението през цялото време. Ако я минеш за по-малко, средната ти скорост е над лимита.</p>
+<h2>Въпроси</h2>
+<details><summary>Колко отсечки за средна скорост има по АМ „Марица“?</summary><p>В каталога на Road Monitor има 6 отсечки по АМ „Марица“ (броят е по посоки), общо около 69,8 км.</p></details>
+<details><summary>Какъв е лимитът в отсечките по АМ „Марица“?</summary><p>Средната скорост се сравнява с 140 km/h. Лимитът на всяка отсечка е в таблицата по-горе.</p></details>
+<details><summary>Коя е най-дългата отсечка по АМ „Марица“?</summary><p>Харманли → Любимец, около 20,7 км. При 140 km/h се минава за не по-малко от 8 мин 52 с.</p></details>
+<aside class="cta">
+  <p>Road Monitor мери средната ти скорост в зоната и казва дали си под лимита, още докато караш.</p>
+  <a class="button" href="https://apps.apple.com/bg/app/id6757105435">Изтегли от App Store</a>
+</aside>
+<p class="more">Други пътища: <a href="../am-trakiya/">АМ „Тракия“</a> · <a href="../am-struma/">АМ „Струма“</a> · <a href="../am-hemus/">АМ „Хемус“</a> · <a href="../am-evropa/">АМ „Европа“ (Северна скоростна тангента)</a> · <a href="../i-5/">I-5</a> · <a href="../i-4/">I-4</a> · <a href="../i-3/">I-3</a> · <a href="../i-1/">I-1</a> · <a href="../i-2/">I-2</a> · <a href="../ii-55/">II-55</a></p>
+
+</main>
+<footer class="site"><div class="wrap">
+  <p><a class="store" href="https://apps.apple.com/bg/app/id6757105435">Изтегли Road Monitor от App Store</a></p>
+  <p>Данните за отсечките са от каталога, който ползва приложението, по списъка на сертифицираните участъци на <a href="https://www.bgtoll.bg" rel="nofollow">BG TOLL</a>. Сайтът е информационен; официален е списъкът на BG TOLL.</p>
+  <p><a href="../../privacy.html" lang="en">Privacy</a> · <a href="../../support.html" lang="en">Support</a> · <a href="../../en/" lang="en" hreflang="en">English</a> · <a href="../../fonts/Onest-OFL.txt">Шрифт Onest (OFL)</a></p>
+</div></footer>
+</body>
+</html>
