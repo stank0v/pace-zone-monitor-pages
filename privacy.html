@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Road Monitor Privacy Policy</title>
-<meta name="description" content="Privacy Policy for the Road Monitor app. Trips stay on your device; optional road alerts use an anonymous push token.">
+<meta name="description" content="Privacy Policy for the Road Monitor app. Trips stay on your device; anonymous usage counters and optional road alerts are described here.">
 <link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -17,11 +17,11 @@
 
   <article>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 3 October 2026</p>
+    <p class="updated">Last updated: 24 November 2026</p>
 
     <div class="callout">
       <strong>The short version</strong>
-      Road Monitor has no accounts, analytics, advertising or cross-app tracking. Trips, speed measurements and location history stay on your device. If you choose Pro road alerts, our server receives an anonymous push token and your alert choices (the roads you watch, or all roads, the kinds of events and quiet hours) so it can send those alerts. Warnings about events on the road ahead are worked out on your device.
+      Road Monitor has no accounts, advertising or cross-app tracking. Trips, speed measurements and location history stay on your device. From version 1.4.4 the app also sends anonymous usage counters (which steps of the app were reached, with no identifier and no location). If you choose Pro road alerts, our server receives an anonymous push token and your alert choices (the roads you watch, or all roads, the kinds of events and quiet hours) so it can send those alerts. Warnings about events on the road ahead are worked out on your device.
     </div>
 
     <h2>Road conditions and optional alerts</h2>
@@ -48,8 +48,18 @@
     <h2>Purchases</h2>
     <p>Road Monitor Pro is sold through Apple's App Store. The app receives purchase status from StoreKit so it can unlock Pro features. We do not receive your payment card details. Apple's purchase and payment data is handled under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
-    <h2>Analytics and tracking</h2>
-    <p>The app contains no analytics frameworks, no crash-reporting services, no advertising identifiers, and no third-party software development kits that collect information about you. We do not track you across apps or websites.</p>
+    <h2>Anonymous usage counters</h2>
+    <p>From version 1.4.4 the app tells the Road Monitor server when a step of the app has been reached, so we can see where people get stuck and improve the app. Each message contains only an event name (for example that the paywall was shown or that a free trial was started) and, where it applies, one short label from a fixed list (for example the plan: monthly, yearly or lifetime).</p>
+    <ul>
+      <li>The message does <strong>not</strong> contain any identifier (no installation identifier, no push token, no advertising identifier), your location, your trips or speed measurements.</li>
+      <li>The server only adds one to a counter for that day. It does not store who sent the message, so the counters cannot be traced to a person or a device.</li>
+      <li>As with any internet request, the server sees the connection's IP address; it is used only to limit how many requests one address can send per minute, and is never stored.</li>
+      <li>Each event is sent at most once per installation, or at most once a day for things that can repeat.</li>
+      <li>The counters are used only by the developer to improve the app. They are not sold or shared, and are not used for advertising or tracking.</li>
+    </ul>
+
+    <h2>Tracking and third-party software</h2>
+    <p>The app contains no third-party analytics frameworks, no crash-reporting services, no advertising identifiers, and no third-party software development kits that collect information about you. We do not track you across apps or websites.</p>
 
     <h2>Data storage and retention</h2>
     <p>Trips, speed measurements, location history and app settings are stored locally on your device. Removing the app deletes that local data.</p>
